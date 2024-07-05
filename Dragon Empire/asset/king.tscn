@@ -1,0 +1,66 @@
+[gd_scene load_steps=11 format=3 uid="uid://b4t2dtl7wte60"]
+
+[ext_resource type="Texture2D" uid="uid://b7l7olt2yymt4" path="res://asset/KingDepanDiam.png" id="1_8dsx7"]
+[ext_resource type="Script" path="res://king.gd" id="1_ahwdh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uqnv4"]
+atlas = ExtResource("1_8dsx7")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evpbu"]
+atlas = ExtResource("1_8dsx7")
+region = Rect2(20, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_62vg4"]
+atlas = ExtResource("1_8dsx7")
+region = Rect2(40, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uktbh"]
+atlas = ExtResource("1_8dsx7")
+region = Rect2(60, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uc5g7"]
+atlas = ExtResource("1_8dsx7")
+region = Rect2(80, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_et7vy"]
+atlas = ExtResource("1_8dsx7")
+region = Rect2(100, 0, 20, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_c5xyo"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uqnv4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_evpbu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_62vg4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uktbh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uc5g7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_et7vy")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_utlg4"]
+
+[node name="king" type="CharacterBody2D"]
+script = ExtResource("1_ahwdh")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_c5xyo")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_utlg4")

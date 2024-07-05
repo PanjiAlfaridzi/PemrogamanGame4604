@@ -1,0 +1,15 @@
+~ start
+
+if global.king_no == false
+
+	Esdras : Raja, izinkan saya berbicara. Saya telah menemukan kebenaran yang mungkin sulit Anda terima. Penyihir yang mempengaruhi Anda memiliki rencana untuk memusnahkan semua naga di kerajaan ini.
+	King : Apa? Tapi mengapa mereka ingin melakukan itu?
+	Esdras : Penyihir percaya bahwa naga adalah ancaman bagi keberadaan kita. Namun, saya telah mempelajari bahwa naga sebenarnya adalah penjaga alam dan keseimbangan. Mereka melindungi hutan, sungai, dan gunung. Tanpa mereka, ekosistem kita akan terganggu.
+	King : Tapi bagaimana kita bisa yakin?
+	Esdras : Saya telah berbicara dengan naga tua, Drakon. Dia mengungkapkan bahwa penyihir telah memutarbalikkan fakta dan memanipulasi Anda. Drakon menawarkan bantuan untuk membuktikan bahwa naga adalah teman, bukan musuh.
+	King : Apa yang harus kita lakukan?
+	Esdras : Mari kita undang Drakon ke istana. Biarkan dia berbicara langsung dengan Anda. Saya yakin dia dapat membuka mata Anda tentang kebenaran ini.
+	King : Baiklah, kita akan melakukannya. Terima kasih, Pemeran Utama.
+	Esdras : Semoga kita dapat menyelamatkan naga dan menjaga keseimbangan alam. 🐉🌿
+	=> END
+=> END
